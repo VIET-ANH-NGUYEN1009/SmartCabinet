@@ -144,7 +144,34 @@ const insertNewCommer = async (req, res) => {
   }
 };
 
+const closeDoor = async (req, res) => {
+  try {
+    const pool = await getPool();
+    const query = `
+      UPDATE ${Code_Solenoid_Checker}
+      SET statusDoor = '0' where statusDoor = '1'
+    `;
+    const result = await pool.request().query(query);
+
+    return res.json({
+      code: 200,
+      result: "OK",
+      message: "Cửa đã được đóng",
+    });
+  } catch (error) {
+    console.error("LỖI SQL:", error);
+
+    return res.status(500).json({
+      code: 500,
+      result: "NG",
+      message: "Lỗi kết nối cơ sở dữ liệu",
+      detail: error.message,
+    });
+  }
+};
+
 module.exports = {
   getUser,
   insertNewCommer,
+  closeDoor,
 };

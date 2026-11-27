@@ -12,9 +12,9 @@ const CabinetCount = async (req, res) => {
     Cabinet,
     COUNT(*) AS TotalEquipment,
     (SELECT COUNT(DISTINCT Cabinet)
-     FROM Equipment_Tool_PC
+     FROM ${Equipment_Tool_PC}
      WHERE Cabinet IS NOT NULL) AS TotalCabinet
-FROM Equipment_Tool_PC
+FROM ${Equipment_Tool_PC}
 WHERE Cabinet IS NOT NULL
 GROUP BY Cabinet
 ORDER BY Cabinet;
@@ -62,7 +62,7 @@ const EquipmentCount = async (req, res) => {
     COUNT(DISTINCT CASE WHEN [Layer] = '2' THEN [Cabinet_Slot] END) AS [Layer2_SlotCount],
     COUNT(DISTINCT CASE WHEN [Layer] = '3' THEN [Cabinet_Slot] END) AS [Layer3_SlotCount],
     COUNT(DISTINCT CASE WHEN [Layer] = '4' THEN [Cabinet_Slot] END) AS [Layer4_SlotCount]
-FROM [MasterKey].[dbo].[Equipment_Tool_PC]
+FROM ${Equipment_Tool_PC}
 WHERE [Cabinet] = @Cabinet 
   AND [Borrow] = 'Need Borrow'
 
@@ -219,15 +219,16 @@ const updateEquipment_Lending_Status = async (req, res) => {
           LENDING_Requester = @Code,
           LENDING_requestDept = @Dept,
           LENDING_requestDate = @time,
-          LENDING_verifyDate = @time
-      WHERE RFID_codes LIKE '%' + @RFID_codes + '%'
+          LENDING_verifyDate = @time,
+          Status_RFID= 1 
+      WHERE RFID_codes LIKE '%' + @RFID_codes + '%' AND Using_Status = 'In Use'
     `;
 
     const result = await pool
       .request()
       .input("Code", sql.VarChar, Code)
       .input("Dept", sql.VarChar, Dept)
-      .input("time", time)
+      .input("time", sql.DateTime, time)
       .input("RFID_codes", sql.VarChar, RFID_codes)
       .query(query);
 
@@ -278,20 +279,20 @@ const updateEquipment_Return_Status = async (req, res) => {
           RETURN_Requester = @Code,
           RETURN_requestDept = @Dept,
           RETURN_requestDate = @time,
-          RETURN_verifyDate = @time
-          LENDING_Requester = NULL
-          LENDING_requestDept = NULL
-          LENDING_requestDate = NULL
-          LENDING_verifyDate = NULL
-
-      WHERE RFID_codes LIKE '%' + @RFID_codes + '%'
+          RETURN_verifyDate = @time,
+          LENDING_Requester = NULL,
+          LENDING_requestDept = NULL,
+          LENDING_requestDate = NULL,
+          LENDING_verifyDate = NULL,
+          Status_RFID =0
+      WHERE RFID_codes LIKE '%' + @RFID_codes + '%' AND Using_Status = 'Lending'
     `;
 
     const result = await pool
       .request()
       .input("Code", sql.VarChar, Code)
       .input("Dept", sql.VarChar, Dept)
-      .input("time", time)
+      .input("time", sql.DateTime, time)
       .input("RFID_codes", sql.VarChar, RFID_codes)
       .query(query);
 

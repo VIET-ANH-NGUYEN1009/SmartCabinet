@@ -14,7 +14,7 @@ const {
   EquipmentCount,
   CabinetCount,
 } = require("./src/routes/equipment");
-const { getUser, insertNewCommer } = require("./src/routes/getUser");
+const { getUser, insertNewCommer, closeDoor } = require("./src/routes/getUser");
 const {
   insertLendingHistory,
   updateStatusReturned,
@@ -61,6 +61,7 @@ app.get(`/${BASEPATH}/health`, (req, res) => {
 });
 app.get(`/${BASEPATH}/apiGet/getUser`, getUser);
 app.post(`/${BASEPATH}/apiPost/insertNewCommer`, insertNewCommer);
+app.get(`/${BASEPATH}/apiGet/closeDoor`, closeDoor);
 app.get(`/${BASEPATH}/apiGet/getEquipment_table`, getEquipment_table);
 app.get(`/${BASEPATH}/apiGet/getEquipmentCount`, EquipmentCount);
 app.get(`/${BASEPATH}/apiGet/getEquipment_lending`, getEquipment_lending);

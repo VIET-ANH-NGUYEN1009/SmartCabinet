@@ -46,7 +46,7 @@ const insertLendingHistory = async (req, res) => {
         Code_Solenoid,
         borrowDate,
         Dept,
-        Location
+        Cabinet
       )
       VALUES
       (
@@ -129,7 +129,7 @@ const updateStatusReturned = async (req, res) => {
       .input("RFID_codes", sql.VarChar, RFID_codes)
       .input("controlNo", sql.VarChar, controlNo)
       .input("Code_Solenoid", sql.VarChar, Code_Solenoid)
-      .input("time", time);
+      .input("time", sql.DateTime, time);
 
     const query = `
       UPDATE ${Equipment_Tool_PC}

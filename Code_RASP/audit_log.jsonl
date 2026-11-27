@@ -1,0 +1,70 @@
+{"time": "2026-11-20T15:19:04", "event": "SESSION_OPEN", "cabinet": "SmartCabinet1", "user": "175885", "name": "Nguyễn Việt Anh"}
+{"time": "2026-11-20T15:22:34", "event": "SESSION_OPEN", "cabinet": "SmartCabinet1", "user": "175885", "name": "Nguyễn Việt Anh"}
+{"time": "2026-11-20T15:25:56", "event": "SESSION_OPEN", "cabinet": "SmartCabinet1", "user": "175885", "name": "Nguyễn Việt Anh"}
+{"time": "2026-11-20T15:26:43", "event": "SESSION_END", "reason": "timeout", "cabinet": "SmartCabinet1", "user": "175885"}
+{"time": "2026-11-20T15:27:03", "event": "SENSOR_ANOMALY", "sensor": "S3", "value": 1, "db_status": "borrowed", "device": "ENG-00094", "state": "SCAN_CARD", "door_open": null}
+{"time": "2026-11-20T15:27:04", "event": "SENSOR_ANOMALY", "sensor": "S3", "value": 1, "db_status": "borrowed", "device": "ENG-00094", "state": "SCAN_CARD", "door_open": null}
+{"time": "2026-11-20T15:27:10", "event": "SENSOR_ANOMALY", "sensor": "S4", "value": 1, "db_status": "borrowed", "device": "ENG-00236", "state": "SCAN_CARD", "door_open": null}
+{"time": "2026-11-20T15:27:15", "event": "SENSOR_ANOMALY", "sensor": "S3", "value": 1, "db_status": "borrowed", "device": "ENG-00094", "state": "SCAN_CARD", "door_open": null}
+{"time": "2026-11-20T15:27:15", "event": "SENSOR_ANOMALY", "sensor": "S4", "value": 1, "db_status": "borrowed", "device": "ENG-00236", "state": "SCAN_CARD", "door_open": null}
+{"time": "2026-11-20T15:27:16", "event": "SENSOR_ANOMALY", "sensor": "S3", "value": 1, "db_status": "borrowed", "device": "ENG-00094", "state": "SCAN_CARD", "door_open": null}
+{"time": "2026-11-20T15:27:17", "event": "SENSOR_ANOMALY", "sensor": "S4", "value": 1, "db_status": "borrowed", "device": "ENG-00236", "state": "SCAN_CARD", "door_open": null}
+{"time": "2026-11-20T15:27:18", "event": "SENSOR_ANOMALY", "sensor": "S3", "value": 1, "db_status": "borrowed", "device": "ENG-00094", "state": "SCAN_CARD", "door_open": null}
+{"time": "2026-11-20T15:27:18", "event": "SENSOR_ANOMALY", "sensor": "S4", "value": 1, "db_status": "borrowed", "device": "ENG-00236", "state": "SCAN_CARD", "door_open": null}
+{"time": "2026-11-20T15:27:19", "event": "SENSOR_ANOMALY", "sensor": "S3", "value": 1, "db_status": "borrowed", "device": "ENG-00094", "state": "SCAN_CARD", "door_open": null}
+{"time": "2026-11-20T15:27:20", "event": "SENSOR_ANOMALY", "sensor": "S4", "value": 1, "db_status": "borrowed", "device": "ENG-00236", "state": "SCAN_CARD", "door_open": null}
+{"time": "2026-11-20T15:27:21", "event": "SENSOR_ANOMALY", "sensor": "S2", "value": 1, "db_status": "borrowed", "device": "ENG-00093", "state": "SCAN_CARD", "door_open": null}
+{"time": "2026-11-20T15:27:24", "event": "SENSOR_ANOMALY", "sensor": "S1", "value": 1, "db_status": "borrowed", "device": "ENG-00060", "state": "SCAN_CARD", "door_open": null}
+{"time": "2026-11-20T15:27:24", "event": "SENSOR_ANOMALY", "sensor": "S3", "value": 1, "db_status": "borrowed", "device": "ENG-00094", "state": "SCAN_CARD", "door_open": null}
+{"time": "2026-11-20T15:27:24", "event": "SENSOR_ANOMALY", "sensor": "S4", "value": 1, "db_status": "borrowed", "device": "ENG-00236", "state": "SCAN_CARD", "door_open": null}
+{"time": "2026-11-20T15:27:25", "event": "SENSOR_ANOMALY", "sensor": "S3", "value": 1, "db_status": "borrowed", "device": "ENG-00094", "state": "SCAN_CARD", "door_open": null}
+{"time": "2026-11-20T15:27:28", "event": "SENSOR_ANOMALY", "sensor": "S3", "value": 1, "db_status": "borrowed", "device": "ENG-00094", "state": "SCAN_CARD", "door_open": null}
+{"time": "2026-11-20T15:27:28", "event": "SENSOR_ANOMALY", "sensor": "S4", "value": 1, "db_status": "borrowed", "device": "ENG-00236", "state": "SCAN_CARD", "door_open": null}
+{"time": "2026-11-20T15:27:28", "event": "SENSOR_ANOMALY", "sensor": "S3", "value": 1, "db_status": "borrowed", "device": "ENG-00094", "state": "SCAN_CARD", "door_open": null}
+{"time": "2026-11-20T15:27:31", "event": "SENSOR_ANOMALY", "sensor": "S3", "value": 1, "db_status": "borrowed", "device": "ENG-00094", "state": "SCAN_CARD", "door_open": null}
+{"time": "2026-11-20T15:27:31", "event": "SENSOR_ANOMALY", "sensor": "S4", "value": 1, "db_status": "borrowed", "device": "ENG-00236", "state": "SCAN_CARD", "door_open": null}
+{"time": "2026-11-20T15:27:34", "event": "SENSOR_ANOMALY", "sensor": "S3", "value": 1, "db_status": "borrowed", "device": "ENG-00094", "state": "SCAN_CARD", "door_open": null}
+{"time": "2026-11-20T15:27:35", "event": "SENSOR_ANOMALY", "sensor": "S3", "value": 1, "db_status": "borrowed", "device": "ENG-00094", "state": "SCAN_CARD", "door_open": null}
+{"time": "2026-11-20T15:27:40", "event": "SENSOR_ANOMALY", "sensor": "S4", "value": 1, "db_status": "borrowed", "device": "ENG-00236", "state": "SCAN_CARD", "door_open": null}
+{"time": "2026-11-20T15:27:46", "event": "SENSOR_ANOMALY", "sensor": "S3", "value": 1, "db_status": "borrowed", "device": "ENG-00094", "state": "SCAN_CARD", "door_open": null}
+{"time": "2026-11-20T15:27:54", "event": "SESSION_OPEN", "cabinet": "SmartCabinet1", "user": "175885", "name": "Nguyễn Việt Anh"}
+{"time": "2026-11-20T15:29:19", "event": "PENDING_RESTORED", "cabinet": "SmartCabinet1", "user": {"code": "175885", "name": "Nguyễn Việt Anh", "dept": "IJP TIM", "card_code": "11326"}, "pending": {"S4": "RETURN"}}
+{"time": "2026-11-20T15:29:29", "event": "PENDING_TIMEOUT", "cabinet": "SmartCabinet1", "user": {"code": "175885", "name": "Nguyễn Việt Anh", "dept": "IJP TIM", "card_code": "11326"}, "pending": {"S4": "RETURN"}}
+{"time": "2026-11-20T15:31:24", "event": "SESSION_END", "reason": "timeout", "cabinet": "SmartCabinet1", "user": "175885"}
+{"time": "2026-11-20T15:31:25", "event": "SENSOR_ANOMALY", "sensor": "S3", "value": 1, "db_status": "borrowed", "device": "ENG-00094", "state": "SCAN_CARD", "door_open": null}
+{"time": "2026-11-20T15:31:32", "event": "SENSOR_ANOMALY", "sensor": "S4", "value": 1, "db_status": "borrowed", "device": "ENG-00236", "state": "SCAN_CARD", "door_open": null}
+{"time": "2026-11-20T15:31:33", "event": "SENSOR_ANOMALY", "sensor": "S3", "value": 1, "db_status": "borrowed", "device": "ENG-00094", "state": "SCAN_CARD", "door_open": null}
+{"time": "2026-11-20T15:31:34", "event": "SENSOR_ANOMALY", "sensor": "S3", "value": 1, "db_status": "borrowed", "device": "ENG-00094", "state": "SCAN_CARD", "door_open": null}
+{"time": "2026-11-20T15:31:35", "event": "SENSOR_ANOMALY", "sensor": "S3", "value": 1, "db_status": "borrowed", "device": "ENG-00094", "state": "SCAN_CARD", "door_open": null}
+{"time": "2026-11-20T15:31:37", "event": "SENSOR_ANOMALY", "sensor": "S4", "value": 1, "db_status": "borrowed", "device": "ENG-00236", "state": "SCAN_CARD", "door_open": null}
+{"time": "2026-11-20T15:56:33", "event": "SENSOR_ANOMALY", "sensors": ["S4"], "door_open": null, "detail": {"S4": {"value": 1, "db_status": "borrowed"}}}
+{"time": "2026-11-20T15:56:35", "event": "SENSOR_ANOMALY", "sensors": ["S4"], "door_open": null, "detail": {"S4": {"value": 1, "db_status": "borrowed"}}}
+{"time": "2026-11-20T15:56:50", "event": "SENSOR_ANOMALY", "sensors": ["S4"], "door_open": null, "detail": {"S4": {"value": 1, "db_status": "borrowed"}}}
+{"time": "2026-11-20T15:56:53", "event": "SENSOR_ANOMALY", "sensors": ["S3"], "door_open": null, "detail": {"S3": {"value": 1, "db_status": "borrowed"}}}
+{"time": "2026-11-20T15:56:55", "event": "SENSOR_ANOMALY", "sensors": ["S4"], "door_open": null, "detail": {"S4": {"value": 1, "db_status": "borrowed"}}}
+{"time": "2026-11-20T15:56:56", "event": "SENSOR_ANOMALY", "sensors": ["S4"], "door_open": null, "detail": {"S4": {"value": 1, "db_status": "borrowed"}}}
+{"time": "2026-11-20T15:56:58", "event": "SENSOR_ANOMALY", "sensors": ["S4"], "door_open": null, "detail": {"S4": {"value": 1, "db_status": "borrowed"}}}
+{"time": "2026-11-20T15:57:43", "event": "SESSION_OPEN", "cabinet": "SmartCabinet1", "user": "175885", "name": "Nguyễn Việt Anh"}
+{"time": "2026-11-20T15:58:46", "event": "SESSION_END", "reason": "timeout", "cabinet": "SmartCabinet1", "user": "175885"}
+{"time": "2026-11-20T15:59:00", "event": "SESSION_OPEN", "cabinet": "SmartCabinet1", "user": "175885", "name": "Nguyễn Việt Anh"}
+{"time": "2026-11-20T16:13:27", "event": "SENSOR_ANOMALY", "sensors": ["S4"], "door_open": null, "detail": {"S4": {"value": 1, "db_status": "borrowed"}}}
+{"time": "2026-11-20T16:13:29", "event": "SESSION_OPEN", "cabinet": "SmartCabinet1", "user": "175885", "name": "Nguyễn Việt Anh"}
+{"time": "2026-11-20T16:14:18", "event": "SESSION_END", "reason": "timeout", "cabinet": "SmartCabinet1", "user": "175885"}
+{"time": "2026-11-20T16:14:23", "event": "SESSION_OPEN", "cabinet": "SmartCabinet1", "user": "175885", "name": "Nguyễn Việt Anh"}
+{"time": "2026-11-20T16:15:12", "event": "SESSION_END", "reason": "timeout", "cabinet": "SmartCabinet1", "user": "175885"}
+{"time": "2026-11-20T16:16:25", "event": "SENSOR_ANOMALY", "sensors": ["S4"], "door_open": null, "detail": {"S4": {"value": 1, "db_status": "borrowed"}}}
+{"time": "2026-11-20T16:18:51", "event": "SESSION_OPEN", "cabinet": "SmartCabinet1", "user": "175885", "name": "Nguyễn Việt Anh"}
+{"time": "2026-11-20T16:19:26", "event": "SESSION_END", "reason": "timeout", "cabinet": "SmartCabinet1", "user": "175885"}
+{"time": "2026-11-20T16:23:59", "event": "SENSOR_ANOMALY", "sensors": ["S4"], "door_open": null, "detail": {"S4": {"value": 1, "db_status": "borrowed"}}}
+{"time": "2026-11-20T16:36:20", "event": "SENSOR_ANOMALY", "sensors": ["S4"], "door_open": null, "detail": {"S4": {"value": 1, "db_status": "borrowed"}}}
+{"time": "2026-11-20T16:41:45", "event": "SESSION_OPEN", "cabinet": "SmartCabinet1", "user": "175885", "name": "Nguyễn Việt Anh"}
+{"time": "2026-11-20T16:41:49", "event": "TRANSACTION", "action": "BORROW", "result": "ok", "device": "ENG-00236", "tag": "05617626", "sensor": "S4", "user": "175885"}
+{"time": "2026-11-20T16:41:51", "event": "TRANSACTION", "action": "RETURN", "result": "ok", "device": "ENG-00236", "tag": "05617626", "sensor": "S4", "user": "175885"}
+{"time": "2026-11-20T16:42:21", "event": "SESSION_END", "reason": "timeout", "cabinet": "SmartCabinet1", "user": "175885"}
+{"time": "2026-11-20T16:42:57", "event": "SESSION_OPEN", "cabinet": "SmartCabinet1", "user": "175885", "name": "Nguyễn Việt Anh"}
+{"time": "2026-11-20T16:43:08", "event": "TRANSACTION", "action": "BORROW", "result": "ok", "device": "ENG-00236", "tag": "05617626", "sensor": "S4", "user": "175885"}
+{"time": "2026-11-20T16:43:10", "event": "TRANSACTION", "action": "RETURN", "result": "ok", "device": "ENG-00236", "tag": "05617626", "sensor": "S4", "user": "175885"}
+{"time": "2026-11-20T16:43:45", "event": "TRANSACTION", "action": "BORROW", "result": "ok", "device": "ENG-00236", "tag": "05617626", "sensor": "S4", "user": "175885"}
+{"time": "2026-11-20T16:43:47", "event": "TRANSACTION", "action": "RETURN", "result": "ok", "device": "ENG-00236", "tag": "05617626", "sensor": "S4", "user": "175885"}
+{"time": "2026-11-20T16:44:47", "event": "SESSION_END", "reason": "timeout", "cabinet": "SmartCabinet1", "user": "175885"}
+{"time": "2026-11-20T16:44:47", "event": "SENSOR_ANOMALY", "sensors": ["S1", "S4"], "door_open": null, "detail": {"S4": {"value": 0, "db_status": "available"}, "S1": {"value": 0, "db_status": "available"}}}
