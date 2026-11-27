@@ -5,6 +5,11 @@ const cookieParser = require("cookie-parser");
 const app = express();
 const port = process.env.PORT || 4000;
 const BASEPATH = process.env.BASEPATH || "api.smartcabinet";
+// Hostname được phép gọi API từ trình duyệt (CORS). Pi gọi bằng requests không gửi Origin nên không bị ảnh hưởng.
+const allowedHosts = (process.env.ALLOWED_HOSTS || "localhost,127.0.0.1,10.0.108.10")
+  .split(",")
+  .map((h) => h.trim())
+  .filter(Boolean);
 
 const {
   getEquipment_table,
@@ -17,6 +22,7 @@ const {
 const { getUser, insertNewCommer, closeDoor } = require("./src/routes/getUser");
 const {
   insertLendingHistory,
+  borrowEquipment,
   updateStatusReturned,
 } = require("./src/routes/lendingHistory");
 
@@ -75,6 +81,8 @@ app.put(
   updateEquipment_Return_Status,
 );
 app.post(`/${BASEPATH}/apiPost/insertLendingHistory`, insertLendingHistory);
+// Mượn = đổi trạng thái + ghi lịch sử trong 1 transaction (Pi gọi endpoint này trước)
+app.post(`/${BASEPATH}/apiPost/borrowEquipment`, borrowEquipment);
 
 app.put(`/${BASEPATH}/apiPut/updateStatusReturned`, updateStatusReturned);
 app.listen(port, () => {
