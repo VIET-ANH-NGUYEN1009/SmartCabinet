@@ -216,7 +216,7 @@ const updateStatusReturned = async (req, res) => {
       return rejectEquipment(transaction, res, equipment, STATUS_LENDING);
     }
 
-    // 1) Thiết bị: Lending -> In Use, xóa thông tin người đang mượn
+    // 1) Thiết bị: Lending -> In Use. GIỮ LENDING_* (người mượn gần nhất) làm lịch sử, ghi thêm RETURN_*
     await new sql.Request(transaction)
       .input("RFID_codes", sql.VarChar, rfid)
       .input("Code", sql.VarChar, Code)
@@ -230,10 +230,6 @@ const updateStatusReturned = async (req, res) => {
             RETURN_requestDept = @Dept,
             RETURN_requestDate = @time,
             RETURN_verifyDate = @time,
-            LENDING_Requester = NULL,
-            LENDING_requestDept = NULL,
-            LENDING_requestDate = NULL,
-            LENDING_verifyDate = NULL,
             Status_RFID = 0
         WHERE LTRIM(RTRIM(RFID_codes)) = @RFID_codes
           AND Using_Status = '${STATUS_LENDING}'
